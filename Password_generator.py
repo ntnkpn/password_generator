@@ -1,4 +1,5 @@
 ﻿import random
+
 digits = '1234567890'
 lowercase_letters = 'abcdefghijklmnopqrstuvwxyz'
 uppercase_letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -16,7 +17,6 @@ print('Включать ли цифры 0123456789 ?')
 digits_yes_no = input()
 if digits_yes_no == 'да':
     chars += digits
-
 
 print('Включать ли прописные буквы ABCDEFGHIJKLMNOPQRSTUVWXYZ ?')
 uppercase_yes_no = input()
@@ -44,8 +44,10 @@ if il1Lo0O_yes_no == 'да':
 else:
     chars_new = chars
 
+
 def generate_password(characters, lenght):
     for _ in range(password_quantity):
         print(*random.sample(characters, lenght), sep='')
+
 
 generate_password(chars_new, password_lenght)
